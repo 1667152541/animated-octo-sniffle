@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: #ccc;
+}
+.redEnvelopeBox{
+  width: 100%;
+  display: flex;
+}
+.redEnvelopeBox>div:nth-child(1),.redEnvelopeBox>div:nth-child(3){
+  width: 450px;
+}
+.redEnvelopeBox>div:nth-child(2){
+  flex: 1;
+  /* max-width: 690px; */
+}

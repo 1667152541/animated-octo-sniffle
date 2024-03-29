@@ -1,0 +1,107 @@
+.redEnvelope{
+  width: 100%;
+  height: 180px;
+  background-image: url('https://gw.alicdn.com/imgextra/i1/O1CN01SzXzZl1U46EOknhoB_!!6000000002463-2-tps-1380-362.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 22px;
+  display: flex;
+}
+
+.money{
+  display: inline-block;
+  line-height: 181px;
+  font-size: 58px;
+  color: #A45927;
+  font-family: PingFang SC;
+  margin-left: 3.5%;
+  flex: 0.25;
+  text-align: left;
+  white-space: nowrap;
+  /* min-width: 140px; */
+}
+.money::after{
+  content: '元';
+  font-size: 24px;
+}
+
+.content{
+  color: #FFE9B0;
+  flex: 0.5;
+  margin-top: 30px;
+  padding-left: 40px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content p{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content>p{
+  margin: 0;
+}
+.content>p:nth-child(1){
+  font-size: 36px;
+}
+.content>p:nth-child(2){
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.time{
+  font-size: 20px;
+}
+.count{
+  font-size: 20px;
+}
+.count>span{
+  display: inline-block;
+  background-color: #FFE9B0;
+  width: 34px;
+  height: 32px;
+  border-radius: 3.39px;
+  color: #FF4000;
+  font-size: 22px;
+  text-align: center;
+  line-height: 32px;
+  margin:0 4px;
+}
+
+.buttonBox{
+  flex: 0.25;
+  margin-right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.button{
+  width: 100%;
+  height: 64px;
+  background-image: linear-gradient(to right, #fae3c6, #fed788);
+  border-radius: 999px;
+  line-height: 64px;
+  color: #A45927;
+  font-family: PingFang SC;
+  font-size: 36px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+.button:hover{
+  background-image: linear-gradient(to right, #ffedd5, #ffde9d);
+}
+.disabled{
+  cursor: not-allowed;
+}
+.disabled:hover{
+  background-image: linear-gradient(to right, #fae3c6, #fed788);
+}
